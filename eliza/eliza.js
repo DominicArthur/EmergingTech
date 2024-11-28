@@ -23,6 +23,14 @@ const responses = [
     "are": "am"
   };
   
+  document.addEventListener("DOMContentLoaded", () => {
+    // Select elements for interaction
+    const chatBox = document.querySelector("#chat-box"); // Chat history 
+    const inputField = document.querySelector("#user-input"); // Input field for user messages
+    const sendButton = document.querySelector("#send-button");  // Button to send message
+  });
+
+  
   function reflect(statement) {
     return statement.split(" ").map(word => reflections[word] || word).join(" ");
   }
