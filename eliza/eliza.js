@@ -28,9 +28,35 @@ const responses = [
     const chatBox = document.querySelector("#chat-box"); // Chat history 
     const inputField = document.querySelector("#user-input"); // Input field for user messages
     const sendButton = document.querySelector("#send-button");  // Button to send message
+
+    // Function to display messages in the chatbox
+    function addMessage(sender, message){
+      const messageElement = document.createElement("div");
+      messageElement.className = sender; // 'User' or 'Bot'
+      messageElement.textContent = message;
+      chatBox.appendChild(messageElement);
+      chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the last message
+    }
+
+   // Event listener for the Send button
+  sendButton.addEventListener("click", () => {
+    const userMessage = inputField.value.trim(); // Get user input
+    if (userMessage) {
+      addMessage("user", `You: ${userMessage}`); // Display user's message
+      const botResponse = getResponse(userMessage); // Generate bot response
+      addMessage("bot", `ELIZA: ${botResponse}`); // Display bot's response
+      inputField.value = ""; // Clear input field
+    }
   });
 
-  
+  // Allow Enter key to send the message
+  inputField.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+      sendButton.click(); // Trigger Send button's click event
+    }
+  });
+});
+
   function reflect(statement) {
     return statement.split(" ").map(word => reflections[word] || word).join(" ");
   }
