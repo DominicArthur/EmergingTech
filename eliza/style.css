@@ -1,16 +1,6 @@
-/* Style for the chat container */
-#chat-container {
-    width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 2px solid #333;
-    border-radius: 10px;
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    font-family: Arial, sans-serif;
-  }
-  
+/* ------------------------------------------------- */
+/* General Body Styling */
+/* ------------------------------------------------- */
   body {
     display: flex;
     justify-content: center;
@@ -21,13 +11,32 @@
     color: #ffffff; /* White text */
     font-family: Arial, sans-serif; 
   }
+
+/* ------------------------------------------------- */
+/* Chat Container Styling */
+/* ------------------------------------------------- */
   
+#chat-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+}
+
   /* Title */
   #chat-container h1 {
     text-align: center;
   }
-  
-  /* Chat history box */
+
+/* ------------------------------------------------- */
+/* Chat History Box Styling */
+/* ------------------------------------------------- */
+
   #chat-box {
     height: 300px;
     overflow-y: auto;
@@ -36,9 +45,38 @@
     padding: 10px;
     margin-bottom: 10px;
     background-color: #2a2a2a;
+    display: flex;
+    flex-direction: column;
   }
+
+  .user-message, .bot-message {
+    display: block;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 80%; 
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+  }
+
+  .user-message {
+    background-color: #4caf50; /* Green for user */
+    color: #ffffff;
+    align-self: flex-end; /* Align to the right */
+    text-align: left;
+}
+
+.bot-message {
+    background-color: #333333; /* Dark gray for bot */
+    color: #ffffff;
+    align-self: flex-start; /* Align to the left */
+    text-align: left;
+}
   
-  /* Chat input area */
+/* ------------------------------------------------- */
+/* Chat Input Area Styling */
+/* ------------------------------------------------- */
+  
   #chat-input {
     display: flex;
     gap: 10px;

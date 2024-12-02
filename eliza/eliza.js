@@ -32,7 +32,7 @@ const responses = [
     // Function to display messages in the chatbox
     function addMessage(sender, message){
       const messageElement = document.createElement("div");
-      messageElement.className = sender; // 'User' or 'Bot'
+      messageElement.className = sender  === "user" ? "user-message" : "bot-message"; // 'User' or 'Bot'
       messageElement.textContent = message;
       chatBox.appendChild(messageElement);
       chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the last message
