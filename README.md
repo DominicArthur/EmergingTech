@@ -43,3 +43,8 @@ For this project I set up a trigram modle to explore its use in text modeling an
 - Saved it with readable format to trigram.json in the repo.
 
 ## References
+- [Project Gutenberg](https://www.gutenberg.org/)
+- [Python JSON Documentation](https://docs.python.org/3/library/json.html)
+- [Generating N-grams using Python | Eng.Shwel](https://www.youtube.com/watch?v=GfJpzJRYa-U)
+- [What are Bigrams and Trigrams](https://www.youtube.com/watch?v=GBQFelgzjKQ)
+- Lab notes and repository in Moodle
