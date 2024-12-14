@@ -35,7 +35,7 @@ You can simply click the following link to access the live chat bot.
 
 
 ## References
-[Notes from supplied repositroy](https://github.com/ianmcloughlin/2425_emerging_technologies?tab=readme-ov-file)
-[New Jersey Institute of Technology](https://web.njit.edu/~ronkowit/eliza.html)
-[Github Repo](https://github.com/wadetb/eliza)
-[Build Your Own Virtual Therapist](https://www.youtube.com/watch?v=9mD_MM5MQSY)
+- [Notes from supplied repositroy](https://github.com/ianmcloughlin/2425_emerging_technologies?tab=readme-ov-file)
+- [New Jersey Institute of Technology](https://web.njit.edu/~ronkowit/eliza.html)
+- [Github Repo](https://github.com/wadetb/eliza)
+- [Build Your Own Virtual Therapist](https://www.youtube.com/watch?v=9mD_MM5MQSY)
