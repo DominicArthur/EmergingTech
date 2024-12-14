@@ -57,6 +57,7 @@ const responses = [
   });
 });
 
+  // Taken from repo 
   function reflect(statement) {
     return statement.split(" ").map(word => reflections[word] || word).join(" ");
   }
