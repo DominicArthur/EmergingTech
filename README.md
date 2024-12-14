@@ -1,14 +1,23 @@
-# EmergingTech
+# EmergingTech :  Trigram Text Model and Analysis
 
-## Task 1
+## Table of Contents 
+1. Introduction(#introduction)
+2. How to Run
+3. Implementation details
+4. References
+
+   
 ### Introduction:
-We were taskes to implement a trigram model, Its purpose is to analyze text data like books, to build a language model.
+For this project I set up a trigram modle to explore its use in text modeling and generation, trigram modles analyze sequences of three consecutive characters to predict the likelihood of the next character in a sequence. I was tasked with building a trigram-based text model using any 5 texts from project gutenberg. From doing the project I was able to notice the potential use of trigrams for generating legable text as well as analyzing specific details in large scale text documents.
 
-### How It Works:
-1 - The test is first cleaned using the 'clean_text' function to remove all unwanted characters and to convert to uppercase.  
-2 - Trigrams extract from the cleaned test using the 'create_trigram' function.  
-3 - Used sample inputs to test its accuracy.  
+### How to Run
+First clone the repository to your machine.
+Locate the files needed.
+Open and run the Jupyter Notebook: jupyter notebook trigrams.ipynb.
+Run the code cell by cell or all at once.
+Or
+Use github codespaces to run it.
 
-## Task 2
-### Introduction: 
-### How It Works:
+### Implementaion details 
+
+

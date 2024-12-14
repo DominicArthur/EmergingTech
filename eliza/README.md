@@ -11,3 +11,6 @@ We were tasked with implementing a version of a ELIZA chatbot. The chatbot respo
 
 ## How to use
 1. Open the chatbot in your browser by running it through "Live Server" extention or Github link.
+
+
+https://dominicarthur.github.io/EmergingTech/
